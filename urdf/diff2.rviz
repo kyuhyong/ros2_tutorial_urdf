@@ -50,39 +50,51 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        axis:
+        base_footprint:
           Value: true
-        body:
+        base_link:
           Value: true
-        box:
+        base_scan:
           Value: true
-        head:
+        caster_mount_link:
           Value: true
-        leg1:
+        caster_rotate_link:
           Value: true
-        leg2:
+        caster_wheel_link:
+          Value: true
+        housing_link:
+          Value: true
+        imu_link:
           Value: true
         odom:
           Value: true
-        rod:
+        wheel_left_link:
           Value: true
-      Marker Scale: 1
+        wheel_right_link:
+          Value: true
+      Marker Scale: 0.4000000059604645
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
         odom:
-          axis:
-            body:
-              head:
-                rod:
-                  box:
+          base_footprint:
+            base_link:
+              base_scan:
+                {}
+              caster_mount_link:
+                caster_rotate_link:
+                  caster_wheel_link:
                     {}
-            leg1:
-              {}
-            leg2:
-              {}
+              housing_link:
+                {}
+              imu_link:
+                {}
+              wheel_left_link:
+                {}
+              wheel_right_link:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -103,37 +115,50 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        axis:
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        body:
+        base_scan:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        box:
+        caster_mount_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        head:
+        caster_rotate_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        leg1:
+        caster_wheel_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        leg2:
+        housing_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rod:
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        wheel_left_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -186,25 +211,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10
+      Distance: 4.044735908508301
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.27178382873535156
+        Y: 0.13937123119831085
+        Z: 0.2749689817428589
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.459797203540802
+      Pitch: 0.6197969317436218
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.618575572967529
+      Yaw: 4.488572120666504
     Saved: ~
 Window Geometry:
   Displays:
